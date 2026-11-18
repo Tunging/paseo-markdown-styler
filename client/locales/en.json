@@ -25,30 +25,90 @@
     "label": "Heading level indicators",
     "hint": "Show # / ## / ### before headings"
   },
+  "presets": {
+    "title": "Presets",
+    "current": "Current look",
+    "unsaved": "Unsaved working copy",
+    "editsInPlace": "{{name}} · edits update this preset",
+    "load": "Load",
+    "saveAs": "Save current look as a preset",
+    "saveAsHint": "Stores every color, size and CSS below under a name",
+    "namePlaceholder": "Preset name",
+    "nameRequired": "Enter a name before saving",
+    "tooMany": "At most {{max}} presets. Delete one first.",
+    "save": "Save preset",
+    "overwrite": "Update this preset",
+    "rename": "Rename preset",
+    "delete": "Delete preset",
+    "none": "No saved presets",
+    "noneHint": "Save the current look to keep it",
+    "activeAction": "Active"
+  },
+  "group": {
+    "block": "Block elements",
+    "inline": "Inline elements",
+    "code": "Code",
+    "table": "Tables",
+    "list": "Lists"
+  },
+  "element": {
+    "heading": "Headings",
+    "paragraph": "Body paragraphs",
+    "blockquote": "Blockquote",
+    "admonition": "Admonitions (Note / Warning)",
+    "rule": "Thematic break",
+    "image": "Images",
+    "strong": "Bold",
+    "emphasis": "Italic",
+    "strikethrough": "Strikethrough",
+    "underline": "Underline",
+    "superscript": "Superscript",
+    "subscript": "Subscript",
+    "highlight": "Highlight",
+    "link": "Links",
+    "linkCode": "Code inside links",
+    "inlineCode": "Inline code",
+    "codeBlock": "Code block frame",
+    "codeBlockText": "Code block text",
+    "table": "Table border",
+    "tableHeader": "Table header",
+    "tableCell": "Table cell",
+    "tableRowEven": "Even row background",
+    "tableRowOdd": "Odd row background",
+    "listItem": "List items",
+    "listMarker": "List markers",
+    "taskCheckbox": "Task checkbox"
+  },
   "preview": {
     "title": "Preview",
     "h1": "Heading level 1",
     "h2": "Heading level 2",
     "h3": "Heading level 3",
     "body": "Bold **bold text**, highlight ==highlighted text==, and punctuation-adjacent **bold:** text.",
+    "quote": "A blockquote line.",
+    "list": "- First item\n- Second item",
+    "inlineCode": "inline code",
+    "codeBlock": "```\nconst demo = 1;\n```",
     "tryHint": "Change the settings below and watch the preview update here.",
     "reminderBefore": "Remember to ",
     "reminderBold": "save and apply",
     "reminderAfter": " after making changes.",
-    "unsupported": "This client cannot render ==highlight== syntax. That capability currently ships only in the Moyf build."
+    "unsupported": "This client cannot render ==highlight== syntax. That capability currently ships only in the Moyf build.",
+    "table": "| Col A | Col B |\n| --- | --- |\n| a1 | b1 |"
   },
   "color": {
-    "headingColor": "Heading color",
-    "headingColorPlaceholder": "#RRGGBB, empty to follow the theme",
-    "boldColor": "Bold color",
-    "boldColorPlaceholder": "#RRGGBB, empty to follow the theme",
-    "highlightBackground": "Highlight background",
-    "highlightBackgroundPlaceholder": "#RRGGBBAA, empty to follow the theme",
-    "highlightTextColor": "Highlight text color",
-    "highlightTextColorPlaceholder": "#RRGGBB, empty to inherit body text",
+    "textPlaceholder": "#RRGGBB, empty to follow the theme",
+    "backgroundHint": "Background",
+    "backgroundPlaceholder": "#RRGGBB or #RRGGBBAA, empty to follow the theme",
     "emptySwatch": "None",
     "followTheme": "Follow theme",
-    "error": "{{label}} must be #RRGGBB or #RRGGBBAA, or empty to follow the theme"
+    "kind": {
+      "color": "text color",
+      "background": "background color"
+    },
+    "errorElement": "{{label}} {{kind}} must be #RRGGBB or #RRGGBBAA, or empty to follow the theme",
+    "pick": "pick a colour",
+    "pickShort": "⋯"
   },
   "customCss": {
     "label": "Custom CSS",
@@ -58,7 +118,8 @@
   },
   "save": {
     "label": "Custom colors and CSS",
-    "action": "Save and apply"
+    "action": "Save and apply",
+    "failed": "Save failed. Settings may have changed on another client; try again."
   },
   "resetAll": {
     "label": "Restore defaults",

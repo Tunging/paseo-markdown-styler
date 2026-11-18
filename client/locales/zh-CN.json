@@ -25,30 +25,90 @@
     "label": "标题层级指示",
     "hint": "在标题前显示 # / ## / ### 层级标记"
   },
+  "presets": {
+    "title": "预设",
+    "current": "当前外观",
+    "unsaved": "未保存的临时调整",
+    "editsInPlace": "{{name}} · 修改会同步到该预设",
+    "load": "载入",
+    "saveAs": "把当前外观存为预设",
+    "saveAsHint": "将下方所有配色、字号与 CSS 一并保存",
+    "namePlaceholder": "预设名称",
+    "nameRequired": "请先填写名称",
+    "tooMany": "最多 {{max}} 个预设，请先删除一个",
+    "save": "保存预设",
+    "overwrite": "更新当前预设",
+    "rename": "重命名预设",
+    "delete": "删除预设",
+    "none": "还没有已保存的预设",
+    "noneHint": "把当前外观保存下来即可复用",
+    "activeAction": "使用中"
+  },
+  "group": {
+    "block": "块级元素",
+    "inline": "行内元素",
+    "code": "代码",
+    "table": "表格",
+    "list": "列表"
+  },
+  "element": {
+    "heading": "标题",
+    "paragraph": "正文段落",
+    "blockquote": "引用块",
+    "admonition": "提示块（Note / Warning）",
+    "rule": "分隔线",
+    "image": "图片",
+    "strong": "加粗",
+    "emphasis": "斜体",
+    "strikethrough": "删除线",
+    "underline": "下划线",
+    "superscript": "上标",
+    "subscript": "下标",
+    "highlight": "高亮",
+    "link": "链接",
+    "linkCode": "链接内代码",
+    "inlineCode": "行内代码",
+    "codeBlock": "代码块外框",
+    "codeBlockText": "代码块文字",
+    "table": "表格边框",
+    "tableHeader": "表头",
+    "tableCell": "单元格",
+    "tableRowEven": "偶数行底色",
+    "tableRowOdd": "奇数行底色",
+    "listItem": "列表项",
+    "listMarker": "列表符号",
+    "taskCheckbox": "任务复选框"
+  },
   "preview": {
     "title": "预览",
     "h1": "一级标题",
     "h2": "二级标题",
     "h3": "三级标题",
     "body": "加粗文本 **加粗文字**、高亮 ==高亮文字==，以及紧跟标点的 **加粗：**示例。",
+    "quote": "这是一段引用。",
+    "list": "- 列表项一\n- 列表项二",
+    "inlineCode": "行内代码",
+    "codeBlock": "```\nconst demo = 1;\n```",
     "tryHint": "在下方修改配置，并在这里试试预览效果。",
     "reminderBefore": "修改完毕后",
     "reminderBold": "记得保存并应用",
     "reminderAfter": "。",
-    "unsupported": "当前客户端不支持 ==高亮== 渲染语法；该能力目前仅 Moyf 版本提供。"
+    "unsupported": "当前客户端不支持 ==高亮== 渲染语法；该能力目前仅 Moyf 版本提供。",
+    "table": "| 列 A | 列 B |\n| --- | --- |\n| a1 | b1 |"
   },
   "color": {
-    "headingColor": "标题颜色",
-    "headingColorPlaceholder": "#RRGGBB，留空跟随主题",
-    "boldColor": "加粗颜色",
-    "boldColorPlaceholder": "#RRGGBB，留空跟随主题",
-    "highlightBackground": "高亮底色",
-    "highlightBackgroundPlaceholder": "#RRGGBBAA，留空跟随主题",
-    "highlightTextColor": "高亮文字色",
-    "highlightTextColorPlaceholder": "#RRGGBB，留空继承正文",
+    "textPlaceholder": "#RRGGBB，留空跟随主题",
+    "backgroundHint": "背景",
+    "backgroundPlaceholder": "#RRGGBB 或 #RRGGBBAA，留空跟随主题",
     "emptySwatch": "无",
     "followTheme": "跟随主题",
-    "error": "{{label}}格式应为 #RRGGBB 或 #RRGGBBAA，留空跟随主题"
+    "kind": {
+      "color": "文字颜色",
+      "background": "背景颜色"
+    },
+    "errorElement": "{{label}} 的{{kind}}格式应为 #RRGGBB 或 #RRGGBBAA，留空跟随主题",
+    "pick": "打开色盘选色",
+    "pickShort": "⋯"
   },
   "customCss": {
     "label": "自定义 CSS",
@@ -58,7 +118,8 @@
   },
   "save": {
     "label": "保存自定义颜色和 CSS",
-    "action": "保存并应用"
+    "action": "保存并应用",
+    "failed": "保存失败：设置可能已被其他客户端修改，请重试。"
   },
   "resetAll": {
     "label": "恢复默认",
