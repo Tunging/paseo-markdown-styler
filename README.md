@@ -1,5 +1,7 @@
 # Markdown Styler
 
+English · [简体中文](README.zh-CN.md)
+
 <img src="assets/icon.png" alt="Markdown Styler icon" width="128" height="128" />
 
 ![Markdown Styler settings with live preview](assets/screenshot.webp)
